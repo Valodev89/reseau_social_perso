@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  margin: 0 0 20px 20px;
+  font-size: 2rem;
+}
+body {
+  background: #eee;
+}
+nav {
+  width: 100vw;
+  background: #ffa034;
+  box-shadow: 0 0 3px #333;
+  z-index: 1000;
+  height: 90px;
+  transition: 0.2s ease;
+  position:fixed;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar2 {
+  height: 70px;
+}
+
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav-elements a {
+  color: #333;
+  text-decoration: none;
+}
+.nav-elements a:visited {
+  color: #333;
+}
+.nav-elements h2 {
+  transition: all 0.3s ease-in-out;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+#alert {
+  margin-right: 150px;
+  margin-top: 10px;
+}
+
+#inscri {
+  background-color: #33333334;
+}
+
+.nav-links, h3 {
+  flex: 1;
+  color: #333;
+}
+
+#logo {
+  width: 100px;
+  display: block;
+}
+
+#barrerecherche {
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 10px;
+}
+
+#recherche {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#barrerecherche:focus {
+  outline: 1px solid#5f5c5c;
+}
+
+.nav-links li {
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+.nav-elements h2:hover {
+  font-weight: 100;
+}
+.linav:hover {
+  transform: translateX(5px);
+  font-weight: bold;
+}
+img {
+  width: auto;
+  height: auto;
+}
+p {
+  text-align: justify;
+}
+
+.adapt {
+  padding: 6rem 1rem 1rem 0;
+  margin-bottom: 3rem;
+}
+
+#dummy-adapt {
+    height: 200%;
+}
+
+.dummy-adapt {
+  padding: 2rem 2rem 2rem 0;
+}
+
+.adapt img {
+  width: 50%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#logosearch {
+  margin-top: 25px;
+}
+
+.formulaire {
+  font-size: 1.5em;
+  background-color: #00000046;
+  padding: 3%;
+  text-align: center;
+  margin: 5%;
+  color: #ffffff;
+}
+
+label {
+    font-size: 2em;
+    margin: 20px 10px 10px 5%;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+input[type="submit"]:hover {
+    cursor:pointer;
+    font-weight: bolder;
+    background-color:  rgba(0, 0, 0, 0.055)
+}
+
+#imgImprovise {
+  width: 70%;
+  height: 40%;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: 1s ease-in;
+}
+
+.imgImproviseo {
+  width: 60%;
+  padding: 2rem;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s ease-in;
+}
+
+.overcome {
+  padding: 2rem;
+  color: white;
+  background: rgb(0, 0, 0);
+}
+.overcome h1 {
+  text-align: center;
+}
+.overcome img {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .nav-elements {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 999px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+
+.pop-up {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  height: 250px;
+  width: 520px;
+  text-align: center;
+  background: linear-gradient(90deg, #30587a, rgb(36, 113, 180));
+  border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+  box-shadow: 0 5px 10px black;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: 1s ease-out;
+}
+.pop-up-container {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+.pop-up-container h3 {
+  color: white;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.button-container input {
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 2px 0 black;
+  outline: none;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+.button-container input:focus {
+  background: rgb(211, 242, 251);
+}
+
+.button-container button {
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #333;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  box-shadow: 1px 2px 0 black;
+  transition: 0.3s;
+}
+.button-container button:hover {
+  background: rgb(211, 242, 251);
+  transform: translateX(0px);
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.button-container button:active {
+  transform: scale(0.96);
+}
+.fa-times-circle {
+  position: absolute;
+  left: 2rem;
+  top: 0.7rem;
+  font-size: 1.7rem;
+  color: white;
+  text-shadow: 2px 2px 0px #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa-times-circle:hover {
+  color: rgb(211, 242, 251);
+  transform: translateX(-1px);
+}
+.fa-times-circle:active {
+  transform: scale(1.5);
+}
