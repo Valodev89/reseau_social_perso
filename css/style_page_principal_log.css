@@ -201,6 +201,7 @@ p::first-letter {
 }
 
 .pop-up {
+  display: none;
   position: fixed;
   right: 1rem;
   bottom: 2rem;
@@ -215,6 +216,7 @@ p::first-letter {
   transition: 1s ease-out;
 }
 .pop-up-container {
+  display: none;
   width: 100%;
   position: absolute;
   top: 45%;

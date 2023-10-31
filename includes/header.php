@@ -1,3 +1,8 @@
+<?php 
+
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,9 +23,9 @@
       <a href="./index.php"><img src="media/Logo4.png" id="logo" alt="logo citrus"></a>
       <ul class="nav-links">
         <li class="linav"><a href="#adapt-title">Actualité</a></li>
-        <li class="linav"><a href="#improvise">Mon profil</a></li>
+        <li class="linav"><a href="#improvise"><?php echo $profil; ?></a></li>
         <li class="linav"><a href="./Page_inscription.php">Inscription</a></li>
-        <li class="linav"><a href="./Se_connecter.php">Se connecter</a></li>
+        <li class="linav"><a href="./Se_connecter.php"><?php echo $log; ?></a></li>
         <li id="recherche">
           <input type="text" id="barrerecherche">
           <span class="material-symbols-outlined" id="logosearch">search</span>

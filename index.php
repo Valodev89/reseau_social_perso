@@ -1,9 +1,10 @@
 <?php
-  session_start();
   
   $style = "css/style.css";
   $script = "js/script.js";
   $titre = "CitrusLife - home";
+  $log = "Se connecter";
+  $profil = 'Mon profil';
 
   include("includes/header.php");
 

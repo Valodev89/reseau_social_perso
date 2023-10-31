@@ -16,8 +16,8 @@
     <div class="pop-up-container">
       <h3>Envie de t'inscrire?<br />Indique ton adresse mail ici </h3>
       <div class="button-container">
-        <input id="mailpopup" type="email" placeholder="djval03@aol.fr" required pattern=".+@globex\.com">
-        <button id="buttonpopup">s'inscrire</button>
+        <input id="mailpopup" type="mail" for="mail" placeholder="djval03@aol.fr" required pattern=".+@globex\.com">
+        <a href="Page_inscription"><button id="buttonpopup">s'inscrire</button></a>
         <div id="alert"></div>
       </div>
       <i class="far fa-times-circle" id="closeBtn"></i>

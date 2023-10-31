@@ -1,9 +1,10 @@
 <?php
-  session_start();
   
   $style = "css/se_connecter.css";
   $script = "js/se_connecter.js";
   $titre = "CitrusLife - home";
+  $log = "Se connecter";
+  $profil = "Mon profil";
 
   include("includes/header.php");
 
@@ -16,13 +17,14 @@
 
             <p class="formulaire">Pour vous connecter :</p>
 
-            <label for="pseudo">Indiquez votre pseudo ou votre mail</label>
+            <label for="mail">Indiquez votre pseudo ou votre mail</label>
             <input type="mail" name="mail" id="mail" required>
 
             <label for="password">Votre mot de passe</label>
             <input type="password" name="password" id="password" required>
 
             <input type="submit" value="Valider" id="valid">
+            <p></p>;
         </form>
       </div>
     </div>

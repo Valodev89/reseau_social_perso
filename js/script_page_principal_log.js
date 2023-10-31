@@ -20,19 +20,16 @@ function translateClose() {
 }
 
 function scroll(){
-window.addEventListener("scroll",(e) => {
-    console.log(scrollY);
+window.addEventListener("scroll",() => {
     if (scrollY > 200 && scrollY < 999) {
         navBar.style.height = "55px";
         // left2.classList.remove("imgImproviseo2");
         translateOpen();
     } else if(scrollY > 1000 && scrollY < 1499) {
         navBar.style.height = "55px";
-        left2.classList.add("imgImproviseo2");
         translateOpen();
     } else if(scrollY > 1500) {
         navBar.style.height = "55px";
-        left3.classList.add('imImproviseo');
         translateOpen();
     } else if(scrollY > 3200) {
         navBar.style.height = "55px";

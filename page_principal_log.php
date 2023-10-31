@@ -1,11 +1,18 @@
 <?php
-  session_start();
-  
+
   $style = "css/style_page_principal_log.css";
   $script = "js/script_page_principal_log.js";
   $titre = "CitrusLife - home";
+  $log = "Pour te déconnecter";
+  echo $_SESSION['name'];
+  $profil = $_SESSION['name'];
 
+  include('includes/variable.php');
   include("includes/header.php");
+  include('connexion.php'); 
+
+
+  
 
 ?>
   <main>
