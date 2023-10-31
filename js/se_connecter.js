@@ -4,6 +4,9 @@ const buttonPopup = document.getElementById("buttonPopup");
 const navBar = document.getElementById("navbar");
 const id = document.getElementById("valid");
 const pseud = document.getElementById("pseudo");
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+
 
 function scroll(){
     window.addEventListener("scroll",(e) => {
@@ -16,4 +19,17 @@ function scroll(){
 };
 
 scroll();
+
+let pointerEvents = false;
+
+button1.addEventListener("click", () => {
+    navBar.style.backgroundColor = "#ffa034";
+   
+})
+
+
+button2.addEventListener("click", () => {
+    navBar.style.backgroundColor = "#34bdff";
+   
+})
 

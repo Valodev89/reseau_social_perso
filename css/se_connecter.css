@@ -93,6 +93,22 @@ nav {
   outline: 1px solid#5f5c5c;
 }
 
+.button {
+  position: relative; 
+  width: 20px; 
+  height: 20px;
+  border-radius: 50px; 
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 9px rgba(255, 255, 255, 0.781);
+  margin: 0 10px 0 0;
+}
+#button1 {
+  background-color: #ffa034;
+}
+#button2 {
+  background-color: #34bdff;
+}
+
 .nav-links li {
   padding: 1rem;
   transition: all 0.2s ease;

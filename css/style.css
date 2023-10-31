@@ -85,6 +85,37 @@ nav {
   outline: 1px solid#5f5c5c;
 }
 
+.button {
+    position: relative;
+    appearance: none; 
+    outline: none;
+    width: 50px; 
+    height: 30px;
+    background-color: #ffffff; 
+    border: 1px solid #D9DADC;
+    border-radius: 50px; 
+    box-shadow: 10px 1 1 1 #ffffff;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 1px; left: 1px;
+  width: 26px; height: 26px;
+  background-color: #34bdff;
+  border-radius: 50%; box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+
+.button:checked {
+  border-color: #34bdff;
+  box-shadow: inset 20px 0 0 0 #34bdff;
+}
+
+.button:after {
+  left: 20px;
+  box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+
 .nav-links li {
   padding: 1rem;
   transition: all 0.2s ease;

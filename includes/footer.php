@@ -26,5 +26,4 @@
   <script src="<?php echo $script ?>"></script>
   
 </body>
-<a href="./Page inscription.html"></a>
 </html>

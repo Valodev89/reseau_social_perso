@@ -30,7 +30,11 @@ $profil = $_SESSION['name'];
         <li id="recherche">
           <input type="text" id="barrerecherche">
           <span class="material-symbols-outlined" id="logosearch">search</span>
-        </li> 
+        </li>
+        <li id="colorbutton">
+        <input id="button1" class="button" type="button">
+        <input id="button2"  class="button" type="button"> 
+        </li>
       </ul>
     </div>
   </nav>

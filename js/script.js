@@ -7,6 +7,8 @@ const buttonPopup = document.getElementById("buttonpopup");
 const alert1 = document.getElementById("alert");
 const recherche = document.getElementById("barrerecherche");
 const logo = document.getElementById("logosearch");
+const button = document.getElementById("button");
+console.log(button);
 
 function scroll(){
 window.addEventListener("scroll",(e) => {
