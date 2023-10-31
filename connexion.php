@@ -9,7 +9,7 @@
         $password = $_POST['password'];
        
         if(array_key_exists($mail,$users) && $users[$mail]['password'] == $password) {  
-            $_SESSION['name'] = $users[$mail]['name']; 
+            $_SESSION['name'] = $users[$mail]['name'];
             echo "<script>window.location.replace('page_principal_log.php')</script>";
         } else {
            

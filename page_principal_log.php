@@ -4,12 +4,12 @@
   $script = "js/script_page_principal_log.js";
   $titre = "CitrusLife - home";
   $log = "Pour te déconnecter";
-  $profil ="Profil de Cam";
+  
 
   include('includes/variable.php');
   include("includes/header.php");
-
-
+  
+  
 ?>
   <main>
     <div class="adapt" id="adapt">
