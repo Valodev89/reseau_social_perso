@@ -2,7 +2,7 @@
 try
     {
         //On se connecte à la base de données (connexion en pdo)
-	    $db = new PDO('mysql:host=localhost; dbname=citruslife', 'Infinity', 'testsalpha123', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+	    $db = new PDO('mysql:host=localhost; dbname=citruslife;', 'root', 'root', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
     }
     catch (Exception $e)
     {

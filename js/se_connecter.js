@@ -20,16 +20,16 @@ function scroll(){
 
 scroll();
 
-let pointerEvents = false;
-
-button1.addEventListener("click", () => {
-    navBar.style.backgroundColor = "#ffa034";
+function navBarColor(){
+    button1.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#ffa034";
    
-})
-
-
-button2.addEventListener("click", () => {
-    navBar.style.backgroundColor = "#34bdff";
+    })
+    button2.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#34bdff";
    
-})
+    })
+}
+
+navBarColor();
 

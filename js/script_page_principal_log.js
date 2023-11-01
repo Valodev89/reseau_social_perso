@@ -10,6 +10,8 @@ const buttonPopup = document.getElementById("buttonpopup");
 const alert1 = document.getElementById("alert");
 const recherche = document.getElementById("barrerecherche");
 const logo = document.getElementById("logosearch");
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
 
 function translateOpen() {
     left.classList.add ("imgImproviseo");
@@ -72,4 +74,17 @@ closePopup.addEventListener("click",(e) => {
 })
 
 scroll();
+
+function navBarColor(){
+    button1.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#ffa034";
+   
+    })
+    button2.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#34bdff";
+   
+    })
+}
+
+navBarColor();
 

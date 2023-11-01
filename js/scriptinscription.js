@@ -2,6 +2,8 @@ let mailPopup = document.getElementById("mailpopup");
 let mailInscription = document.getElementById("mail");
 const buttonPopup = document.getElementById("buttonPopup");
 const navBar = document.getElementById("navbar");
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
 
 
 function scroll(){
@@ -15,4 +17,17 @@ function scroll(){
 };
 
 scroll();
+
+function navBarColor(){
+    button1.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#ffa034";
+   
+    })
+    button2.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#34bdff";
+   
+    })
+}
+
+navBarColor();
 

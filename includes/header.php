@@ -1,7 +1,11 @@
 <?php 
 
 session_start(); 
-$profil = $_SESSION['name']; 
+
+ if (isset($_SESSION['name'])) {
+    $profil = $_SESSION['name'];
+ };
+
 ?>
 
 <!DOCTYPE html>

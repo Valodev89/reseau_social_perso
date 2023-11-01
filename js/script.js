@@ -8,7 +8,8 @@ const alert1 = document.getElementById("alert");
 const recherche = document.getElementById("barrerecherche");
 const logo = document.getElementById("logosearch");
 const button = document.getElementById("button");
-console.log(button);
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
 
 function scroll(){
 window.addEventListener("scroll",(e) => {
@@ -62,6 +63,19 @@ logo.addEventListener("click",() => {
 
     }
 })
+
+function navBarColor(){
+    button1.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#ffa034";
+   
+    })
+    button2.addEventListener("click", () => {
+        navBar.style.backgroundColor = "#34bdff";
+   
+    })
+}
+
+navBarColor();
 
 
  
