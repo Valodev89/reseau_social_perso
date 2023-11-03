@@ -1,5 +1,5 @@
 <?php
-  
+
   $style = "css/style.css";
   $script = "js/script.js";
   $titre = "CitrusLife - home";
@@ -7,17 +7,7 @@
   $profil = 'Mon profil';
 
   include("includes/header.php");
-  // include('includes/config.php');
-
-  // $sqlQuery = 'SELECT * FROM utilisateurs';
-  // $recipesStatement = $mysqlClient->prepare($sqlQuery);
-  // $recipesStatement->execute();
-  // $recipes = $recipesStatement->fetchAll();
-
-  // foreach ($recipes as $recipe) {
-  //   echo $recipe;
-  // }
-
+ 
 ?>
 
   <main>

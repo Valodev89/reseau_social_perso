@@ -1,27 +1,30 @@
 <?php
-    include('includes/config.php');
+
+session_start();  
+
+  include('includes/config.php');
 
   $sqlQuery = 'SELECT * FROM utilisateurs';
 	$usersStatement = $db->prepare($sqlQuery);
 	$usersStatement->execute();
 	$users = $usersStatement->fetchAll();
 
-    if(!isset($_POST['mail']) && !isset($_POST['password'])) {
-        echo 'Il faut remplir les champs pour vous connecter';
-    } else {
-        $mail = $_POST['mail'];
-        $password = $_POST['password'];
+  if(!isset($_POST['mail']) && !isset($_POST['password'])) {
+      echo 'Il faut remplir les champs pour vous connecter';
+  } else {
+      $mail = $_POST['mail'];
+      $password = $_POST['password'];
 
-        foreach ($users as $user) {
-          if ($user['mail'] === $_POST['mail'] && $user['password'] === $_POST['password']) {
-              $profil = $user['name'];
-            echo "<script>window.location.replace('page_principal_log.php')</script>";
+      foreach ($users as $user) {
+        if ($user['mail'] === $_POST['mail'] && $user['password'] === $_POST['password']) {
+          $_SESSION['userlog'] = $user['name'];
+          echo "<script>window.location.replace('page_principal_log.php')</script>";
         } else {
-            $style = "css/se_connecter.css";
-            $script = "js/se_connecter.js";
-            $titre = "CitrusLife - home";
-            $profil = "Mon profil";
-            $log = "Se connecter";
+          $style = "css/se_connecter.css";
+          $script = "js/se_connecter.js";
+          $titre = "CitrusLife - home";
+          $profil = "Mon profil";
+          $log = "Se connecter";
           
 ?>
 

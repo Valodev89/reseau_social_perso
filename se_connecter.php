@@ -24,7 +24,7 @@
             <input type="password" name="password" id="password" required>
 
             <input type="submit" value="Valider" id="valid">
-            <p></p>;
+            <p></p>
         </form>
       </div>
     </div>

@@ -18,11 +18,19 @@ window.addEventListener("scroll",(e) => {
         left.classList.add = "imgImproviseo";
         left.style.opacity = "1";
         left.style.transform = "translateX(0px)";
+        button1.style.height = "12px";
+        button1.style.width = "20px";
+        button2.style.height = "12px";
+        button2.style.width = "20px";
     } else {
         navBar.style.height = "70px";
         left.classList.remove = "imgImproviseo";
         left.style.opacity = "0";
         left.style.transform = "translateX(-200px)";
+        button1.style.height = "15px";
+        button1.style.width = "30px";
+        button2.style.height = "15px";
+        button2.style.width = "30px";
     }
 });
 

@@ -1,22 +1,17 @@
 <?php
+  session_start();
 
   $style = "css/style_page_principal_log.css";
   $script = "js/script_page_principal_log.js";
   $titre = "CitrusLife - home";
   $log = "Pour te déconnecter";
+  $profil = $_SESSION['userlog'];
 
-  include('connexion.php');
   include("includes/header.php");
+ 
+  include('connexion.php');
 
-  // $sqlQuery = 'SELECT * FROM utilisateurs';
-	// $usersStatement = $db->prepare($sqlQuery);
-	// $usersStatement->execute();
-	// $users = $usersStatement->fetchAll();
 
-  // foreach ($users as $user) {
-  //   echo $user['name'];
-  //   $profil = $user['name'];
-  // }  
   
 ?>
   <main>

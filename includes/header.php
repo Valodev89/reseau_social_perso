@@ -1,14 +1,3 @@
-<?php 
-
-session_start(); 
-
-
- if (isset($_SESSION['name'])) {
-    $profil = $_SESSION['name'];
- };
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -36,10 +25,11 @@ session_start();
           <input type="text" id="barrerecherche">
           <span class="material-symbols-outlined" id="logosearch">search</span>
         </li>
-        <li id="colorbutton">
+      </ul>
+      <div id="colorbutton">
         <input id="button1" class="button" type="button">
         <input id="button2"  class="button" type="button"> 
-        </li>
-      </ul>
+      </div>
+      
     </div>
   </nav>
