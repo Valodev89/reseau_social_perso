@@ -3,7 +3,7 @@
   $style = "css/styleinscription.css";
   $script = "js/scriptinscription.js";
   $titre = "CitrusLife - Inscription";
-  $log = "se connecter";
+  $log = "Se connecter";
   $profil = 'Mon profil';
 
   include("includes/header.php");
@@ -16,10 +16,10 @@
 
             <p class="formulaire">Pas encore inscrit? Merci de remplir de formulaire ci-dessous</p>
 
-            <label for="name">Indiquez votre nom</label>
+            <label for="name">Indiquez votre Prénom</label>
             <input type="text" name="name" id="name" required>
 
-            <label for="lastname">Indiquez votre prénom</label>
+            <label for="lastname">Indiquez votre Nom</label>
             <input type="text" name="lastname" id="lastname" required>
 
             <label for="birthday">Votre date de naissance</label>
