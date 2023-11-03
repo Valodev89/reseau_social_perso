@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Citrus Life</title>
+  <title><?php echo $titre; ?></title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -18,7 +18,7 @@
       <a href="./index.php"><img src="media/Logo4.png" id="logo" alt="logo citrus"></a>
       <ul class="nav-links">
         <li class="linav"><a href="#adapt-title">Actualité</a></li>
-        <li class="linav"><a href="#improvise"><?php echo $profil; ?></a></li>
+        <li class="linav"><a href="./Page_profil.php"><?php echo $profil; ?></a></li>
         <li class="linav"><a href="./Page_inscription.php">Inscription</a></li>
         <li class="linav"><a href="./Se_connecter.php"><?php echo $log; ?></a></li>
         <li id="recherche">

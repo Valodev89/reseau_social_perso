@@ -1,5 +1,7 @@
 <?php
   
+  session_start();
+
   $style = "css/se_connecter.css";
   $script = "js/se_connecter.js";
   $titre = "CitrusLife - home";
@@ -7,6 +9,8 @@
   $profil = "Mon profil";
 
   include("includes/header.php");
+
+  session_destroy();
 
 ?>
   <main>

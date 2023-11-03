@@ -17,7 +17,11 @@ session_start();
 
       foreach ($users as $user) {
         if ($user['mail'] === $_POST['mail'] && $user['password'] === $_POST['password']) {
-          $_SESSION['userlog'] = $user['name'];
+          $_SESSION['name'] = $user['name'];
+          $_SESSION['lastname'] = $user['lastname'];
+          $_SESSION['birthday'] = $user['birthday'];
+          $_SESSION['mail'] = $user['mail'];
+          $_SESSION['password'] = $user['password'];
           echo "<script>window.location.replace('page_principal_log.php')</script>";
         } else {
           $style = "css/se_connecter.css";

@@ -3,9 +3,9 @@
 
   $style = "css/style_page_principal_log.css";
   $script = "js/script_page_principal_log.js";
-  $titre = "CitrusLife - home";
+  $titre = "CitrusLife - ". $_SESSION['name'];
   $log = "Pour te déconnecter";
-  $profil = $_SESSION['userlog'];
+  $profil = $_SESSION['name'];
 
   include("includes/header.php");
  
