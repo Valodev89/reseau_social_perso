@@ -1,11 +1,11 @@
 <?php
 try
-    {
-        //On se connecte à la base de données (connexion en pdo)
-	    $db = new PDO('mysql:host=localhost; dbname=citruslife;', 'root', 'root', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
-    }
-    catch (Exception $e)
-    {
+{
+      //On se connecte à la base de données (connexion en pdo)
+	 $db = new PDO('mysql:host=localhost; dbname=citruslife', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+}
+catch (Exception $e)
+{
         //Si on arrive pas à se connecter à la base de données, on arrête le chargement du site (die) et on affiche une petite page d'erreur (La variable-fonction $e->getMessage() renvoie quelle est l'erreur)
 	    die('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 			    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
@@ -24,5 +24,6 @@ try
 					<p>' . $e->getMessage().'</p>
 				</body>
 			</html>'); 
-    }
+}
+
     ?>

@@ -1,23 +1,28 @@
 <?php
-    session_start();
-    include('includes/variable.php');
-    
+    include('includes/config.php');
+
+  $sqlQuery = 'SELECT * FROM utilisateurs';
+	$usersStatement = $db->prepare($sqlQuery);
+	$usersStatement->execute();
+	$users = $usersStatement->fetchAll();
+
     if(!isset($_POST['mail']) && !isset($_POST['password'])) {
         echo 'Il faut remplir les champs pour vous connecter';
     } else {
         $mail = $_POST['mail'];
         $password = $_POST['password'];
-       
-        if(array_key_exists($mail,$users) && $users[$mail]['password'] == $password) {  
-            $_SESSION['name'] = $users[$mail]['name'];
+
+        foreach ($users as $user) {
+          if ($user['mail'] === $_POST['mail'] && $user['password'] === $_POST['password']) {
+              $profil = $user['name'];
             echo "<script>window.location.replace('page_principal_log.php')</script>";
         } else {
-           
             $style = "css/se_connecter.css";
             $script = "js/se_connecter.js";
             $titre = "CitrusLife - home";
             $profil = "Mon profil";
             $log = "Se connecter";
+          
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +75,7 @@
 <?php
 
   include('includes/footer.php');
-
+}
         }
     }
 ?>

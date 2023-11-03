@@ -4,17 +4,25 @@
   $script = "js/script_page_principal_log.js";
   $titre = "CitrusLife - home";
   $log = "Pour te déconnecter";
-  
 
-  include('includes/variable.php');
+  include('connexion.php');
   include("includes/header.php");
-  
+
+  // $sqlQuery = 'SELECT * FROM utilisateurs';
+	// $usersStatement = $db->prepare($sqlQuery);
+	// $usersStatement->execute();
+	// $users = $usersStatement->fetchAll();
+
+  // foreach ($users as $user) {
+  //   echo $user['name'];
+  //   $profil = $user['name'];
+  // }  
   
 ?>
   <main>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
-        <h2 id="adapt-title">Sophie vient de publier une photo..</h2>
+        <h2 id="adapt-title"><?php echo $profil; ?> vient de publier une photo..</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
           doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
           ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
