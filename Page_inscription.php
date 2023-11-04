@@ -1,13 +1,16 @@
 <?php
-  
+   
+  session_start(); 
+
   $style = "css/styleinscription.css";
   $script = "js/scriptinscription.js";
-  $titre = "CitrusLife - Inscription";
+  $titre = 'CitrusLife';
   $log = "Se connecter";
   $profil = 'Mon profil';
-
+  
   include("includes/header.php");
 
+  session_destroy();
 ?>
   <main>
     <div class="adapt" id="adapt">

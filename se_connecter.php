@@ -4,9 +4,10 @@
 
   $style = "css/se_connecter.css";
   $script = "js/se_connecter.js";
-  $titre = "CitrusLife - home";
+  $titre = 'CitrusLife';
   $log = "Se connecter";
-  $profil = "Mon profil";
+  $profil = 'Mon profil';
+  
 
   include("includes/header.php");
 

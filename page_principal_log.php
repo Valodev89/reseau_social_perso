@@ -3,18 +3,37 @@
 
   $style = "css/style_page_principal_log.css";
   $script = "js/script_page_principal_log.js";
-  $titre = "CitrusLife - ". $_SESSION['name'];
-  $log = "Pour te déconnecter";
-  $profil = $_SESSION['name'];
+
+  if ($_SESSION['name']){
+    $titre = "CitrusLife - ". $_SESSION['name'];
+    $profil = $_SESSION['name'];
+    $log = "Pour te déconnecter";
+  } else {
+    $titre = 'CitrusLife';
+    $log = "Se connecter";
+    $profil = 'Mon profil';
+  }
 
   include("includes/header.php");
- 
   include('connexion.php');
-
-
-  
 ?>
   <main>
+  <div class="adapt" id="adapt">
+      <div class="dummy-adapt">
+        <form method="post" id="form" action="inscription.php">
+
+            <p class="formulaire">Pour poster remplir les champs ci-dessous : </p>
+
+            <label for="publication">Texte : </label>
+            <input type="text" name="publication" id="publication" required>
+
+            <label for="lastname">Indiquez votre Nom</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <input type="submit" value="Valider">
+        </form>
+      </div>
+    </div>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
         <h2 id="adapt-title"><?php echo $profil; ?> vient de publier une photo..</h2>

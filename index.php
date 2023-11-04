@@ -2,9 +2,10 @@
 
   $style = "css/style.css";
   $script = "js/script.js";
-  $titre = "CitrusLife - home";
+  $titre = 'CitrusLife';
   $log = "Se connecter";
   $profil = 'Mon profil';
+  
 
   include("includes/header.php");
  
