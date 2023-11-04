@@ -30,6 +30,5 @@
         <input id="button1" class="button" type="button">
         <input id="button2"  class="button" type="button"> 
       </div>
-      
     </div>
   </nav>

@@ -16,23 +16,18 @@
 
   include("includes/header.php");
   include('connexion.php');
+  
 ?>
   <main>
-  <div class="adapt" id="adapt">
-      <div class="dummy-adapt">
+  <div class="adapt2" id="adapt2">
         <form method="post" id="form" action="inscription.php">
-
-            <p class="formulaire">Pour poster remplir les champs ci-dessous : </p>
-
+            <p class="formulaire">Poster une publication : </p>
             <label for="publication">Texte : </label>
-            <input type="text" name="publication" id="publication" required>
-
-            <label for="lastname">Indiquez votre Nom</label>
+            <textarea name="publicaton" id="publication" cols="30" rows="10"></textarea>
+            <label for="lastname">Insérer une photo : </label>
             <input type="text" name="lastname" id="lastname" required>
-
             <input type="submit" value="Valider">
         </form>
-      </div>
     </div>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
