@@ -1,17 +1,17 @@
 <?php
   
-  session_start();
+session_start();
 
-  $style = "css/se_connecter.css";
-  $script = "js/se_connecter.js";
-  $titre = 'CitrusLife';
-  $log = "Se connecter";
-  $profil = 'Mon profil';
+$style = "css/se_connecter.css";
+$script = "js/se_connecter.js";
+$titre = 'CitrusLife';
+$log = "Se connecter";
+$profil = 'Mon profil';
   
 
-  include("includes/header.php");
+include("includes/header.php");
 
-  session_destroy();
+session_destroy();
 
 ?>
   <main>
@@ -35,6 +35,6 @@
     </div>
     <?php
 
-  include('includes/footer.php');
+include('includes/footer.php');
 
 ?>

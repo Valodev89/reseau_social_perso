@@ -30,8 +30,9 @@ if ($_SESSION['name']){
         </div>
 
 <?php
-    include('includes/footer.php');
+include('includes/footer.php');
 ?>
+
 <?php
 } else {
     echo "<script>window.location.replace('se_connecter.php')</script>";

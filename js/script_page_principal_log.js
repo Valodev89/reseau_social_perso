@@ -13,6 +13,7 @@ const logo = document.getElementById("logosearch");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
+// Ouverture et fermeture popup bas
 function translateOpen() {
     left.classList.add ("imgImproviseo");
 }
@@ -21,6 +22,7 @@ function translateClose() {
     left.classList.remove ("imgImproviseo");
 }
 
+// Action sur le scroll (sur la navBar et sur le popup bas)
 function scroll(){
 window.addEventListener("scroll",() => {
     if (scrollY > 200 && scrollY < 999) {
@@ -45,16 +47,15 @@ window.addEventListener("scroll",() => {
 
 scroll();
 
+// Action sur les boutons changement de thémes en cas de scroll vers le bas
 function scroll2(){
     window.addEventListener("scroll",(e) => {
         if(scrollY > 200) {
-            navBar.style.height = "55px"; 
             button1.style.height = "12px";
             button1.style.width = "20px";
             button2.style.height = "12px";
             button2.style.width = "20px";
         } else {
-            navBar.style.height = "70px";
             button1.style.height = "15px";
             button1.style.width = "30px";
             button2.style.height = "15px";
@@ -65,19 +66,7 @@ function scroll2(){
 };
 scroll2();
 
-
-// const observer = new IntersectionObserver((e) => {
-//     for(const ei of e) {
-//         console.log(
-//             ei.target,
-//             ei.isIntersecting
-//         );
-//     };
-// });
-
-// observer.observe(document.getElementById('improvise'));
-
-
+// Action sur le scroll (le popup bas disparait en cas de remonté)
 window.addEventListener("scroll",(e) => {
     if(scrollY > 500) {
         popup.style. opacity = "1";
@@ -96,6 +85,7 @@ closePopup.addEventListener("click",(e) => {
 
 scroll();
 
+// Bouton en haut à droite pour changer de thème 
 function navBarColor(){
     button1.addEventListener("click", () => {
         navBar.style.backgroundColor = "#ffa034";

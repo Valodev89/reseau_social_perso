@@ -20,9 +20,8 @@ include("includes/header.php");
           iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
           deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
     </div>
-      <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
+    <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
   </div>
-
   <div class="improvise" id="improvise">
     <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" id="imgImprovise">
     <div>
@@ -39,7 +38,6 @@ include("includes/header.php");
       </div>
   </div>
   
-
  <?php
 
   include('includes/footer.php');

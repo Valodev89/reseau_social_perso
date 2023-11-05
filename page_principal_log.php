@@ -1,21 +1,23 @@
 <?php
-  session_start();
+session_start();
 
-  $style = "css/style_page_principal_log.css";
-  $script = "js/script_page_principal_log.js";
+$style = "css/style_page_principal_log.css";
+$script = "js/script_page_principal_log.js";
 
-  if ($_SESSION['name']){
-    $titre = "CitrusLife - ". $_SESSION['name'];
-    $profil = $_SESSION['name'];
-    $log = "Pour te déconnecter";
-  } else {
-    $titre = 'CitrusLife';
-    $log = "Se connecter";
-    $profil = 'Mon profil';
-  }
+// si l'utilisateur est connecté on passe les variables de sessions
+if ($_SESSION['name']){
+  $titre = "CitrusLife - ". $_SESSION['name'];
+  $profil = $_SESSION['name'];
+  $log = "Pour te déconnecter";
+  // Sinon on injecte des variables standard
+} else {
+  $titre = 'CitrusLife';
+  $log = "Se connecter";
+  $profil = 'Mon profil';
+}
 
-  include("includes/header.php");
-  include('connexion.php');
+include("includes/header.php");
+include('connexion.php');
   
 ?>
   <main>
@@ -101,8 +103,8 @@
       </div>
       <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise2">
     </div>
-    <?php
+<?php
 
-  include('includes/footer.php');
+include('includes/footer.php');
 
 ?>

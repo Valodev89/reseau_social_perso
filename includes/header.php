@@ -17,10 +17,10 @@
     <div class="nav-elements" id="nav-elements">
       <a href="./index.php"><img src="media/Logo4.png" id="logo" alt="logo citrus"></a>
       <ul class="nav-links">
-        <li class="linav"><a href="./actualite.php">Actualité</a></li>
-        <li class="linav"><a href="./Page_profil.php"><?php echo $profil; ?></a></li>
-        <li class="linav"><a href="./Page_inscription.php">Inscription</a></li>
-        <li class="linav"><a href="./Se_connecter.php"><?php echo $log; ?></a></li>
+        <li class="linav"><a href="./page_actualite.php">Actualité</a></li>
+        <li class="linav"><a href="./page_profil.php"><?php echo $profil; ?></a></li>
+        <li class="linav"><a href="./page_inscription.php">Inscription</a></li>
+        <li class="linav"><a href="./se_connecter.php"><?php echo $log; ?></a></li>
         <li id="recherche">
           <input type="text" id="barrerecherche">
           <span class="material-symbols-outlined" id="logosearch">search</span>

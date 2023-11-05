@@ -5,7 +5,7 @@ const navBar = document.getElementById("navbar");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
-
+// Action sur le scroll (sur la navBar et sur le popup bas)
 function scroll(){
     window.addEventListener("scroll",(e) => {
         if(scrollY > 200) {
@@ -27,6 +27,7 @@ function scroll(){
 
 scroll();
 
+// Bouton en haut à droite pour changer de thème
 function navBarColor(){
     button1.addEventListener("click", () => {
         navBar.style.backgroundColor = "#ffa034";

@@ -11,6 +11,7 @@ const button = document.getElementById("button");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 
+// Action sur le scroll (sur la navBar et sur le popup bas)
 function scroll(){
 window.addEventListener("scroll",(e) => {
     if(scrollY > 200) {
@@ -34,6 +35,9 @@ window.addEventListener("scroll",(e) => {
     }
 });
 
+scroll();
+
+// Action sur le scroll (le popup bas disparait en cas de remonté)
 window.addEventListener("scroll",(e) => {
     if(scrollY > 500) {
         popup.style. opacity = "1";
@@ -52,8 +56,6 @@ closePopup.addEventListener("click",(e) => {
 
 };
 
-scroll();
-
 buttonPopup.addEventListener("click", () => {
     if (mailPopup.value == "") {
        alert1.innerHTML = "<h4>Merci d'inscrire un mail valide</h4>";
@@ -64,6 +66,7 @@ buttonPopup.addEventListener("click", () => {
     }
 });
 
+// Alerte si le mail n'est pas valide
 logo.addEventListener("click",() => {
     if (recherche.value === "") {
         alert("");
@@ -72,6 +75,7 @@ logo.addEventListener("click",() => {
     }
 })
 
+// Bouton en haut à droite pour changer de thème 
 function navBarColor(){
     button1.addEventListener("click", () => {
         navBar.style.backgroundColor = "#ffa034";

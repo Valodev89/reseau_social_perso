@@ -4,19 +4,24 @@ session_start();
 
 include('includes/config.php');
 
+// Récupération des données de la base de donnée
 $sqlQuery = 'SELECT * FROM utilisateurs';
 $usersStatement = $db->prepare($sqlQuery);
 $usersStatement->execute();
 $users = $usersStatement->fetchAll();
 
+// Vérification que les champs mails et mot de passe sont bien renseignés
 if(!isset($_POST['mail']) && !isset($_POST['password'])) {
   echo 'Il faut remplir les champs pour vous connecter';
 } else {
+  // si ok on récupère les informations dans 2 variables
   $mail = $_POST['mail'];
   $password = $_POST['password'];
 
+// On recherche si le compte existe bien dans la base de donnée et si oui on envoie l'utilisateur sur sa page personnel 
 foreach ($users as $user) {
   if ($user['mail'] === $_POST['mail'] && $user['password'] === $_POST['password']) {
+    // Créations des variables de sessions
     $_SESSION['name'] = $user['name'];
     $_SESSION['lastname'] = $user['lastname'];
     $_SESSION['birthday'] = $user['birthday'];
@@ -24,6 +29,7 @@ foreach ($users as $user) {
     $_SESSION['password'] = $user['password'];
     echo "<script>window.location.replace('page_principal_log.php')</script>";
   } else {
+    // Si l'utilisateur n'est pas connecté les variables de sessions sont remplacées par des variables standard
     $style = "css/se_connecter.css";
     $script = "js/se_connecter.js";
     $titre = "CitrusLife - home";
@@ -50,8 +56,8 @@ foreach ($users as $user) {
       <ul class="nav-links">
         <li class="linav"><a href="#adapt-title">Actualité</a></li>
         <li class="linav"><a href="#improvise"><?php echo $profil; ?></a></li>
-        <li class="linav"><a href="./Page_inscription.php">Inscription</a></li>
-        <li class="linav"><a href="./Se_connecter.php"><?php echo $log; ?></a></li>
+        <li class="linav"><a href="./page_inscription.php">Inscription</a></li>
+        <li class="linav"><a href="./se_connecter.php"><?php echo $log; ?></a></li>
         <li id="recherche"><input type="text" id="barrerecherche"><span class="material-symbols-outlined" id="logosearch">search</span></li> 
       </ul>
     </div>
@@ -75,7 +81,7 @@ foreach ($users as $user) {
 <?php
 
   include('includes/footer.php');
+  }
 }
-        }
-    }
+}
 ?>
