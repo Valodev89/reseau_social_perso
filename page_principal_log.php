@@ -21,15 +21,18 @@ include('connexion.php');
   
 ?>
   <main>
-  <div class="adapt2" id="adapt2">
-        <form method="post" id="form" action="inscription.php">
-            <p class="formulaire">Poster une publication : </p>
+    <div class="adapt" id="adapt">
+      <div class="dummy-adapt">
+      <p class="formulaire">Poster une publication : </p>
+        <form method="post" id="form2" action="#" enctype="multipart/form-data">
+            
             <label for="publication">Texte : </label>
             <textarea name="publicaton" id="publication" cols="30" rows="10"></textarea>
             <label for="lastname">Insérer une photo : </label>
-            <input type="text" name="lastname" id="lastname" required>
+            <input type="file" name="file" id="file">
             <input type="submit" value="Valider">
         </form>
+      </div>
     </div>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">

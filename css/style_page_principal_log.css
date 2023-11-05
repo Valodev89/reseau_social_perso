@@ -129,7 +129,7 @@ p {
   text-align: justify;
 }
 p::first-letter {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: rgb(0, 144, 216);
 }
 .adapt {
@@ -140,6 +140,16 @@ p::first-letter {
 .dummy-adapt {
   padding: 2rem 2rem 2rem 0;
 }
+
+#publication {
+  width:auto;
+  border-radius: 10px;
+}
+
+.formulaire {
+  font-size: 2.5em;
+}
+
 .adapt img {
   width: 50%;
 }
@@ -147,6 +157,15 @@ p::first-letter {
   padding: 1rem;
   margin-bottom: 3rem;
   display: flex;
+}
+
+input[type=submit] {
+  height: 50px;
+  width: 150px;
+  margin-top: 5%;
+  background-color: #5f5c5c;
+  border: 0px solid black;
+  color: white;
 }
 .improvise h1 {
   text-align: right;
@@ -293,10 +312,18 @@ p::first-letter {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .fa-times-circle:hover {
   color: rgb(211, 242, 251);
   transform: translateX(-1px);
 }
+
 .fa-times-circle:active {
   transform: scale(1.5);
+}
+
+#form2 {
+  display: flex;
+flex-direction: column;
+  width: 100vh;
 }

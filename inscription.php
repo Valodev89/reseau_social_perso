@@ -24,6 +24,6 @@
             'password' => $password
         ]);
         // On renvoie l'utilisateur sur le formulaire de connexion
-        echo "<script>window.location.replace('se_connecter.php')</script>";
+        echo "<script>window.location.replace('page_connecter.php')</script>";
     }
 ?>
