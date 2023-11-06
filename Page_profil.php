@@ -7,7 +7,7 @@ if ($_SESSION['name']){
     $log = "Pour te déconnecter";
     $style = "css/Page_profil.css";
     $script = "js/script_page_principal_log.js"; 
-    $inscription = 'Inscription';
+    $inscription = 'Poster';
   
     include("includes/header.php");
     include('connexion.php');

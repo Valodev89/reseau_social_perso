@@ -4,12 +4,8 @@ session_start();
 
 if ($_SESSION['name']) {
 
-  $style = "css/style.css";
-  $script = "js/script.js";
-  $titre = "CitrusLife - ". $_SESSION['name'];
-  $profil = $_SESSION['name'];
-  $log = "Pour te déconnecter";
-  $inscription = 'Inscription';
+  echo "<script>window.location.replace('page_principal_log.php')</script>";
+
 } else {
   
   $style = "css/style.css";

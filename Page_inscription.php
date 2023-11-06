@@ -2,12 +2,15 @@
    
 session_start(); 
 
-$style = "css/styleinscription.css";
-$script = "js/scriptinscription.js";
-$titre = 'CitrusLife';
-$log = "Se connecter";
-$profil = 'Mon profil';
-$inscription = 'Inscription';
+if (!$_USER['name']) {
+  echo "<script>window.location.replace('page_poster.php')</script>";
+} else {
+  $style = "css/styleinscription.css";
+  $script = "js/scriptinscription.js";
+  $titre = 'CitrusLife';
+  $log = "Se connecter";
+  $profil = 'Mon profil';
+  $inscription = 'Inscription';
   
 include("includes/header.php");
 
@@ -42,5 +45,7 @@ session_destroy();
 <?php
 
 include('includes/footer.php');
+
+}
 
 ?>
