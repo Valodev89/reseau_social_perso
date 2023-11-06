@@ -12,7 +12,7 @@ if ($_SESSION['name']){
     include("includes/header.php");
     include('connexion.php');
 ?>
-    <body>
+    <main>
         <div class="adapt" id="adapt">
             <h2>Votre prénom</h2>
             <p><?php echo $_SESSION['name'] ?></p>

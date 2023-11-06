@@ -157,6 +157,7 @@ p::first-letter {
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-bottom: 5%;
 }
 
 #publication {

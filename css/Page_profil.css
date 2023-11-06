@@ -11,7 +11,8 @@ html {
 }
 
 h2 {
-  font-size: 1rem;
+  margin: 0 0 20px 20px;
+  font-size: 2rem;
 }
 
 #adapt p {
@@ -30,6 +31,7 @@ text-align: center;
 
 body {
   background: #eee;
+  overflow:auto
 }
 nav {
   width: 100vw;
@@ -51,7 +53,7 @@ nav {
 .nav-elements {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .nav-elements a {
@@ -149,6 +151,11 @@ img {
 }
 p {
   text-align: justify;
+}
+
+#overcome p::first-letter {
+  font-size: 2.5rem;
+  color: rgb(0, 144, 216);
 }
 
 .adapt {
