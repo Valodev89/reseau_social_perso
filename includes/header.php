@@ -19,7 +19,7 @@
       <ul class="nav-links">
         <li class="linav"><a href="./page_actualite.php">Actualité</a></li>
         <li class="linav"><a href="./page_profil.php"><?php echo $profil; ?></a></li>
-        <li class="linav"><a href="./page_inscription.php">Inscription</a></li>
+        <li class="linav"><a href="./page_inscription.php"><?php echo $inscription; ?></a></li>
         <li class="linav"><a href="./page_connecter.php"><?php echo $log; ?></a></li>
         <li id="recherche">
           <input type="text" id="barrerecherche">

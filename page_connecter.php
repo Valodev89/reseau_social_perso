@@ -7,6 +7,7 @@ $script = "js/se_connecter.js";
 $titre = 'CitrusLife';
 $log = "Se connecter";
 $profil = 'Mon profil';
+$inscription = 'Inscription';
   
 
 include("includes/header.php");

@@ -1,11 +1,25 @@
 <?php
 
-$style = "css/style.css";
-$script = "js/script.js";
-$titre = 'CitrusLife';
-$log = "Se connecter";
-$profil = 'Mon profil';
+session_start();
+
+if ($_SESSION['name']) {
+
+  $style = "css/style.css";
+  $script = "js/script.js";
+  $titre = "CitrusLife - ". $_SESSION['name'];
+  $profil = $_SESSION['name'];
+  $log = "Pour te déconnecter";
+  $inscription = 'Inscription';
+} else {
   
+  $style = "css/style.css";
+  $script = "js/script.js";
+  $titre = 'CitrusLife';
+  $log = "Se connecter";
+  $profil = 'Mon profil';
+  $inscription = 'Inscription';
+}
+
 include("includes/header.php");
  
 ?>

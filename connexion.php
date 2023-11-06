@@ -4,19 +4,22 @@ session_start();
 
 include('includes/config.php');
 
-// Récupération des données de la base de donnée
-$sqlQuery = 'SELECT * FROM utilisateurs';
-$usersStatement = $db->prepare($sqlQuery);
-$usersStatement->execute();
-$users = $usersStatement->fetchAll();
 
 // Vérification que les champs mails et mot de passe sont bien renseignés
 if(!isset($_POST['mail']) && !isset($_POST['password'])) {
   echo 'Il faut remplir les champs pour vous connecter';
 } else {
+
   // si ok on récupère les informations dans 2 variables
   $mail = $_POST['mail'];
   $password = $_POST['password'];
+
+  // Récupération des données de la base de donnée
+  $sqlQuery = 'SELECT * FROM utilisateurs WHERE mail=:mail';
+  $usersStatement = $db->prepare($sqlQuery);
+  $usersStatement->bindParam(':mail',$mail);
+  $usersStatement->execute();
+  $users = $usersStatement->fetchAll();
 
 // On recherche si le compte existe bien dans la base de donnée et si oui on envoie l'utilisateur sur sa page personnel 
 foreach ($users as $user) {
