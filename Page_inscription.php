@@ -2,9 +2,11 @@
    
 session_start(); 
 
-if (!$_USER['name']) {
-  echo "<script>window.location.replace('page_poster.php')</script>";
+if ($_SESSION['name']) {
+  header("Location: page_poster.php");
+  // echo "<script>window.location.replace('page_poster.php')</script>";
 } else {
+
   $style = "css/styleinscription.css";
   $script = "js/scriptinscription.js";
   $titre = 'CitrusLife';

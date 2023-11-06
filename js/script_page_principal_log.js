@@ -12,6 +12,7 @@ const recherche = document.getElementById("barrerecherche");
 const logo = document.getElementById("logosearch");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
+let themeColor = 1;
 
 // Ouverture et fermeture popup bas
 function translateOpen() {
@@ -89,13 +90,33 @@ scroll();
 function navBarColor(){
     button1.addEventListener("click", () => {
         navBar.style.backgroundColor = "#ffa034";
-   
+        themeColor = 1;
+        storage();
     })
     button2.addEventListener("click", () => {
         navBar.style.backgroundColor = "#34bdff";
-   
+        themeColor = 2;
+        storage();
     })
 }
-
 navBarColor();
+
+function storage(){
+    window.localStorage.setItem("themeColor", themeColor);
+}
+
+function restoretheme(){
+    if(localStorage.getItem('themeColor') == 1 || localStorage.getItem('themeColor') == 2) {
+        console.log("restore theme 1");
+        if (localStorage.getItem('themeColor') == 1) {
+            navBar.style.backgroundColor = "#ffa034";
+            themeColor = 1;
+        } else {
+            navBar.style.backgroundColor = "#34bdff";
+            themeColor = 2;  
+        }
+    } 
+}
+
+restoretheme();
 
