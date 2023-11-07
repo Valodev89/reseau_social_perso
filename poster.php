@@ -11,7 +11,7 @@
         $file = $_FILES['file'];
         $publication = $_POST['publication'];
         $author = $_SESSION['name'];
-        $date = date("Y-m-d");
+        $date = date("d-m-Y");
 
 	    $insertpost = $db->prepare('INSERT INTO post(author_name_post, date_post, pic_post, text_post) VALUES (:author_name_post, :date_post, :pic_post, :text_post)');
 	    $insertpost->execute([
