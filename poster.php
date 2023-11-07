@@ -11,7 +11,7 @@
         $file = $_FILES['file'];
         $publication = $_POST['publication'];
         $author = $_SESSION['name'];
-        $date = date("Y-m-d H:i:s");
+        $date = date("Y-m-d");
 
 	    $insertpost = $db->prepare('INSERT INTO post(author_name_post, date_post, pic_post, text_post) VALUES (:author_name_post, :date_post, :pic_post, :text_post)');
 	    $insertpost->execute([
@@ -21,7 +21,10 @@
             'text_post' => $publication,
         ]);
         // On renvoie l'utilisateur sur le formulaire de connexion
-        echo $_FILES['file'];
-        // header("Location: page_principal_log.php");
+        $_SESSION['author'] = $author;
+        $_SESSION['date'] = $date;
+        $_SESSION['file'] = $file;
+        $_SESSION['text'] = $publication;
+        header("Location: page_principal_log.php");
     }
 ?>

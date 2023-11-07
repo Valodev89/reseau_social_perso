@@ -25,10 +25,8 @@ include('connexion.php');
   <main>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
-        <h2 id="adapt-title"><?php echo $profil; ?> vient de publier une photo..</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
-          ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
+        <h2 id="adapt-title">Publication de <?php echo $_SESSION['author']; ?><br><span id="date_publication">Le <?php echo $_SESSION['date']; ?></span></h2>
+        <p><?php echo $_SESSION['text']; ?> </p><br />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam unde quis quam, alias nobis ut voluptatum
           iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
           deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
