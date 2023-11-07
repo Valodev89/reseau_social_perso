@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if ($_SESSION['name']){
+if (isset($_SESSION['name'])){
     $titre = "CitrusLife - ". $_SESSION['name'];
     $profil = $_SESSION['name'];
     $log = "Pour te déconnecter";
@@ -36,7 +36,7 @@ include('includes/footer.php');
 
 <?php
 } else {
-    echo "<script>window.location.replace('page_connecter.php')</script>";
+    header("Location: page_connecter.php");
 }
 ?>
 

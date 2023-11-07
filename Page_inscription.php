@@ -2,9 +2,8 @@
    
 session_start(); 
 
-if ($_SESSION['name']) {
+if (isset($_SESSION['name'])) {
   header("Location: page_poster.php");
-  // echo "<script>window.location.replace('page_poster.php')</script>";
 } else {
 
   $style = "css/styleinscription.css";

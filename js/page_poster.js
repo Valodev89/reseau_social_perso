@@ -107,6 +107,7 @@ function storage(){
 
 function restoretheme(){
     if(localStorage.getItem('themeColor') == 1 || localStorage.getItem('themeColor') == 2) {
+        console.log("restore theme 1");
         if (localStorage.getItem('themeColor') == 1) {
             navBar.style.backgroundColor = "#ffa034";
             themeColor = 1;

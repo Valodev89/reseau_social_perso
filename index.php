@@ -2,20 +2,18 @@
 
 session_start();
 
-if ($_SESSION['name']) {
+if (isset($_SESSION['name'])) {
 
-  echo "<script>window.location.replace('page_principal_log.php')</script>";
-
+  header("Location: page_principal_log.php");
 } else {
-  
+
   $style = "css/style.css";
   $script = "js/script.js";
   $titre = 'CitrusLife';
   $log = "Se connecter";
   $profil = 'Mon profil';
   $inscription = 'Inscription';
-}
-
+  
 include("includes/header.php");
  
 ?>
@@ -48,8 +46,9 @@ include("includes/header.php");
       </div>
   </div>
   
- <?php
+<?php
 
   include('includes/footer.php');
-
-  ?>
+}
+?>
+  

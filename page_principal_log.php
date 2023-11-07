@@ -5,7 +5,7 @@ $style = "css/style_page_principal_log.css";
 $script = "js/script_page_principal_log.js";
 
 // si l'utilisateur est connecté on passe les variables de sessions
-if ($_SESSION['name']){
+if (isset($_SESSION['name'])){
   $titre = "CitrusLife - ". $_SESSION['name'];
   $profil = $_SESSION['name'];
   $log = "Pour te déconnecter";

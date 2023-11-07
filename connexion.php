@@ -30,7 +30,7 @@ foreach ($users as $user) {
     $_SESSION['birthday'] = $user['birthday'];
     $_SESSION['mail'] = $user['mail'];
     $_SESSION['password'] = $user['password'];
-    echo "<script>window.location.replace('page_principal_log.php')</script>";
+    header("Location: page_principal_log.php");
   } else {
     // Si l'utilisateur n'est pas connecté les variables de sessions sont remplacées par des variables standard
     $style = "css/se_connecter.css";
