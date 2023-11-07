@@ -25,20 +25,27 @@ include('connexion.php');
   <main>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
+        <?php if (!isset($_SESSION['text'])) { ?>
+          <h2 id="adapt-title">Pas de nouvelles publications<br><span id="date_publication"></span></h2>
+          <p></p><br />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam unde quis quam, alias nobis ut voluptatum
+          iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
+          deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
+        </div>
+          <img src="./image/bebe-pleure.jpg" alt="bébé qui pleure">
+        </div>
+      <?php  
+      } else {
+      ?>
         <h2 id="adapt-title">Publication de <?php echo $_SESSION['author']; ?><br><span id="date_publication">Le <?php echo $_SESSION['date']; ?></span></h2>
         <p><?php echo $_SESSION['text']; ?> </p><br />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam unde quis quam, alias nobis ut voluptatum
           iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
           deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
-      </div>
-      <img src= <?php 
-      if (isset($_SESSION['file'])) {
-        echo $_SESSION['file'];
-      } else {
-        echo "";
-      }
-       ?> alt="">
     </div>
+  <?php 
+  } 
+  ?>
     <div class="improvise" id="improvise">
       <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise">
       <div>

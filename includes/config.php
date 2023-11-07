@@ -29,6 +29,6 @@ catch (Exception $e)
 
 $salt='aerty';
 
-// mise à jour
+
 
 ?>
