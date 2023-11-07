@@ -27,4 +27,6 @@ catch (Exception $e)
 	); 
 }
 
+$salt='aerty';
+
 ?>

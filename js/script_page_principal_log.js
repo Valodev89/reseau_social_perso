@@ -13,6 +13,7 @@ const logo = document.getElementById("logosearch");
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 let themeColor = 1;
+const publication = document.getElementById("adapt");
 
 // Ouverture et fermeture popup bas
 function translateOpen() {
@@ -119,3 +120,4 @@ function restoretheme(){
 
 restoretheme();
 
+document.addEventListener

@@ -27,7 +27,7 @@ if (isset($_SESSION['name'])){
             <p><?php echo $_SESSION['mail'] ?></p>
 
             <h2>Votre mot de passe</h2>
-            <p><?php echo $_SESSION['password'] ?></p>
+            <p><?php echo "*************" ?></p>
         </div>
 
 <?php

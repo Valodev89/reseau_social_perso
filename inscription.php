@@ -13,7 +13,7 @@
         $lastname = $_POST['lastname'];
         $birthday = $_POST['birthday'];
         $mail = $_POST['mail'];
-        $password = $_POST['password'];
+        $password = crypt($_POST['password'],$salt);
 
 	    $insertuser = $db->prepare('INSERT INTO utilisateurs(name, lastname, birthday, mail, password) VALUES (:name, :lastname, :birthday, :mail, :password)');
 	    $insertuser->execute([

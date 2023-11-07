@@ -31,7 +31,13 @@ include('connexion.php');
           iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
           deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
       </div>
-      <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
+      <img src= <?php 
+      if (isset($_SESSION['file'])) {
+        echo $_SESSION['file'];
+      } else {
+        echo "";
+      }
+       ?> alt="">
     </div>
     <div class="improvise" id="improvise">
       <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise">
