@@ -8,7 +8,7 @@ $titre = 'CitrusLife';
 $log = "Se connecter";
 $profil = 'Mon profil';
 $inscription = 'Inscription';
-  
+
 
 include("includes/header.php");
 
@@ -30,11 +30,28 @@ session_destroy();
             <input type="password" name="password" id="password" required>
 
             <input type="submit" value="Valider" id="valid">
-            <p></p>
+            <p id="message">
+              <?php 
+                if (isset($_SESSION['error'])) {
+
+                  echo $_SESSION['error'];
+                
+                } else {
+
+                 echo $_SESSION['error'] = '';
+                 
+                }
+               ?></p>
         </form>
       </div>
     </div>
     <?php
+
+    if(isset($_SESSION['error'])) {
+
+      unset($_SESSION['error']);
+    
+    }
 
 include('includes/footer.php');
 
