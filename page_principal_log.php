@@ -28,9 +28,7 @@ include('connexion.php');
         <?php if (!isset($_SESSION['text'])) { ?>
           <h2 id="adapt-title">Pas de nouvelles publications<br><span id="date_publication"></span></h2>
           <p></p><br />
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam unde quis quam, alias nobis ut voluptatum
-          iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
-          deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
+          <p>ça craint à mort</p>
         </div>
           <img src="./image/bebe-pleure.jpg" alt="bébé qui pleure">
         </div>
