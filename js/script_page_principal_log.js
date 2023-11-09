@@ -14,6 +14,7 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 let themeColor = 1;
 const publication = document.getElementById("adapt");
+let body = document.querySelector('body');
 
 // Ouverture et fermeture popup bas
 function translateOpen() {
@@ -91,11 +92,17 @@ scroll();
 function navBarColor(){
     button1.addEventListener("click", () => {
         navBar.style.backgroundColor = "#ffa034";
+        body.style.backgroundColor = 'white';
+        body.style.transition = '2s';
+        body.style.color = 'black';
         themeColor = 1;
         storage();
     })
     button2.addEventListener("click", () => {
         navBar.style.backgroundColor = "#34bdff";
+        body.style.backgroundColor = 'grey';
+        body.style.color = 'white';
+        body.style.transition = '2s';
         themeColor = 2;
         storage();
     })
@@ -110,9 +117,15 @@ function restoretheme(){
     if(localStorage.getItem('themeColor') == 1 || localStorage.getItem('themeColor') == 2) {
         if (localStorage.getItem('themeColor') == 1) {
             navBar.style.backgroundColor = "#ffa034";
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            body.style.transition = '2s';
             themeColor = 1;
         } else {
             navBar.style.backgroundColor = "#34bdff";
+            body.style.backgroundColor = 'grey';
+            body.style.color = 'white';
+            body.style.transition = '2s';
             themeColor = 2;  
         }
     } 

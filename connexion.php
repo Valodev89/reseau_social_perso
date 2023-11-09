@@ -19,10 +19,11 @@ if(!isset($_POST['mail']) && !isset($_POST['password'])) {
   $usersStatement->execute();
   $users = $usersStatement->fetchAll();
 
+ 
 // On recherche si le compte existe bien dans la base de donnée et si oui on envoie l'utilisateur sur sa page personnel 
 foreach ($users as $user) {
 
-    if ($user['mail'] === $_POST['mail'] || $user['password'] == crypt($_POST['password'], $salt)) {
+    if ($user['mail'] == $mail && $user['password'] == crypt($_POST['password'], $salt)) {
     
     // Créations des variables de sessions
       $_SESSION['name'] = $user['name'];
