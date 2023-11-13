@@ -137,25 +137,11 @@ restoretheme();
 const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
         if(entry.isIntersecting) {
-            publication.innerHTML = `
-            <div class="improvise" id="improvise">
-            <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise">
-            <div>
-              <h2>Envie de poster?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-                doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex
-                aut ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at, eum maxime enim blanditiis harum
-                inventore, officia non eveniet repellendus expedita dolore ipsam explicabo exercitationem magni repudiandae
-                perspiciatis consequuntur, debitis consequatur ea omnis? Quo natus velit, exercitationem aut nesciunt,
-                molestiae doloremque facilis soluta qui tenetur pariatur quis, alias rem ut modi beatae at nisi illo
-                officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
-                soluta nesciunt similique.</p>
-            </div>
-          </div>`
+           console.log(entries);
         }
     }
 })
 
 observer.observe(document.getElementById('improvise'));
 observer.observe(document.getElementById('adapt'));
+

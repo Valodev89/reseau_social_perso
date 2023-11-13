@@ -127,13 +127,14 @@ img {
 }
 p {
   text-align: justify;
+  font-size: 1.3em;
 }
 p::first-letter {
   font-size: 2.5rem;
   color: rgb(0, 144, 216);
 }
 #date_publication {
-  font-size: 0.3em;
+  font-size: 0.4em;
   padding: 0;
   
 }

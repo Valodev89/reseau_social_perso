@@ -21,7 +21,17 @@ if (isset($_SESSION['name'])){
             <p><?php echo $_SESSION['lastname'] ?></p>
 
             <h2>Votre date de naissance</h2>
-            <p><?php echo $_SESSION['birthday'] ?></p>
+            
+            <?php 
+            
+            function dateFr($date) {
+                return strftime('%d-%m-%Y' ,strtotime($date));
+            }
+
+            ?>
+
+            <p><?php echo dateFr($_SESSION['birthday']); ?></p>
+
 
             <h2>Votre mail</h2>
             <p><?php echo $_SESSION['mail'] ?></p>
