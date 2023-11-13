@@ -135,13 +135,15 @@ function restoretheme(){
 restoretheme();
 
 const observer = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-        if(entry.isIntersecting) {
-           console.log(entries);
-        }
+    for(entry of entries) {
+        console.log(
+        entry.target,   
+        entry.isIntersecting
+        );
+        }     
     }
-})
+)
 
 observer.observe(document.getElementById('improvise'));
-observer.observe(document.getElementById('adapt'));
+observer.observe(document.getElementById('adapt2'));
 

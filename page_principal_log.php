@@ -20,17 +20,22 @@ if (isset($_SESSION['name'])){
 
 include("includes/header.php");
 include('connexion.php');
-  
+
 ?>
   <main>
     <div class="adapt" id="adapt">
       <div class="dummy-adapt">
         <?php if (isset($_SESSION['author'])) { ?>
-        <h2 id="adapt-title">Publication de <?php echo $_SESSION['author']; ?><br><span id="date_publication">Le <?php echo $_SESSION['date']; ?></span></h2>
+        <h2 id="adapt-title">Publication de <?php echo $_SESSION['name']; ?><br><span id="date_publication">Le <?php 
+        function datefr ($date) {
+          return strftime('%d-%m-%Y', strtotime($date));
+        }    
+        echo datefr($_SESSION['date']); ?></span></h2>
+
         <p><?php echo $_SESSION['text']; ?> </p><br />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
-          ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
+        doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
+        ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
       </div>  
         <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
         <?php } else { ?>
@@ -55,6 +60,28 @@ include('connexion.php');
           officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
           soluta nesciunt similique.</p>
       </div>
+    </div>
+
+    <div class="adapt" id="adapt2">
+      <div class="dummy-adapt">
+        <?php if (isset($_SESSION['author'])) { ?>
+        <h2 id="adapt-title">Publication de <?php echo $_SESSION['name']; ?><br><span id="date_publication">Le <?php 
+         
+        echo datefr($_SESSION['date']); ?></span></h2>
+
+        <p><?php echo $_SESSION['text']; ?> </p><br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
+        doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
+        ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
+      </div>  
+        <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
+        <?php } else { ?>
+        <h2 id="adapt-title">Pas de nouvelles publication</h2>
+        <p>Désolé il n'y a pour le moment aucunes nouvelles publication, si vous le souhaitez vous pouvez poster un publication? Cliquez sur Poster puis remplir les champs</p><br />
+      </div>  
+        <img src="./media/pleure.jpg" alt="">
+        <?php } ?>
+
     </div>
 <?php
 
