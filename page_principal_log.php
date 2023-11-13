@@ -28,9 +28,9 @@ include('connexion.php');
         <?php if (isset($_SESSION['author'])) { ?>
         <h2 id="adapt-title">Publication de <?php echo $_SESSION['author']; ?><br><span id="date_publication">Le <?php echo $_SESSION['date']; ?></span></h2>
         <p><?php echo $_SESSION['text']; ?> </p><br />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam unde quis quam, alias nobis ut voluptatum
-          iste totam. Explicabo aliquid magnam iure incidunt dolor beatae laudantium quia qui dolore facilis maxime quae
-          deleniti fuga eum dicta numquam, veniam ea obcaecati modi?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
+          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
+          ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
       </div>  
         <img src="./media/svg/undraw_digital_currency_qpak.avif" alt="">
         <?php } else { ?>
@@ -55,51 +55,6 @@ include('connexion.php');
           officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
           soluta nesciunt similique.</p>
       </div>
-    </div>
-    <div class="improvise" id="improvise">
-      <div>
-        <h2>Envie de poster?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex
-          aut ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at, eum maxime enim blanditiis harum
-          inventore, officia non eveniet repellendus expedita dolore ipsam explicabo exercitationem magni repudiandae
-          perspiciatis consequuntur, debitis consequatur ea omnis? Quo natus velit, exercitationem aut nesciunt,
-          molestiae doloremque facilis soluta qui tenetur pariatur quis, alias rem ut modi beatae at nisi illo
-          officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
-          soluta nesciunt similique.</p>
-      </div>
-      <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise2">
-    </div>
-    <div class="improvise" id="improvise3">
-      <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise">
-      <div>
-        <h2>Envie de poster?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex
-          aut ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at, eum maxime enim blanditiis harum
-          inventore, officia non eveniet repellendus expedita dolore ipsam explicabo exercitationem magni repudiandae
-          perspiciatis consequuntur, debitis consequatur ea omnis? Quo natus velit, exercitationem aut nesciunt,
-          molestiae doloremque facilis soluta qui tenetur pariatur quis, alias rem ut modi beatae at nisi illo
-          officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
-          soluta nesciunt similique.</p>
-      </div>
-    </div>
-    <div class="improvise" id="improvise4">
-      <div>
-        <h2>Envie de poster?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
-          doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex
-          aut ipsam excepturi sed voluptate laudantium doloremque! Officiis, repellendus labore?</p><br />
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at, eum maxime enim blanditiis harum
-          inventore, officia non eveniet repellendus expedita dolore ipsam explicabo exercitationem magni repudiandae
-          perspiciatis consequuntur, debitis consequatur ea omnis? Quo natus velit, exercitationem aut nesciunt,
-          molestiae doloremque facilis soluta qui tenetur pariatur quis, alias rem ut modi beatae at nisi illo
-          officiis corrupti incidunt! Velit cum accusamus nobis, recusandae dignissimos laboriosam ratione fugit alias
-          soluta nesciunt similique.</p>
-      </div>
-      <img src="./media/svg/undraw_nakamoto_2iv6.jpg" alt="" class="imgImprovise2">
     </div>
 <?php
 
