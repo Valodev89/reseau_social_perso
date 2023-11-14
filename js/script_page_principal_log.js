@@ -136,14 +136,12 @@ restoretheme();
 
 const observer = new IntersectionObserver((entries) => {
     for(entry of entries) {
-        console.log(
-        entry.target,   
-        entry.isIntersecting
-        );
-        }     
+        if (entry.isIntersecting) {
+            publication2.innerHTML += ``;
+        }
     }
-)
+}    
+);
+
 
 observer.observe(document.getElementById('improvise'));
-observer.observe(document.getElementById('adapt2'));
-
