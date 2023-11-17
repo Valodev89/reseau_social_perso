@@ -20,7 +20,7 @@
             'pic_post' => $file,
             'text_post' => $publication,
         ]);
-        // On renvoie l'utilisateur sur le formulaire de connexion
+        // On renvoie l'utilisateur sur la page principal
         $_SESSION['author'] = $author;
         $_SESSION['date'] = $date;
         $_SESSION['file'] = $file;

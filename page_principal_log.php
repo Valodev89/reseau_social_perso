@@ -31,7 +31,6 @@ include('connexion.php');
           return strftime('%d-%m-%Y', strtotime($date));
         }    
         echo datefr($_SESSION['date']); ?></span></h2>
-
         <p><?php echo $_SESSION['text']; ?> </p><br />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni animi autem adipisci fugit! Id fugiat
         doloribus similique itaque inventore aperiam magni officia quibusdam libero, culpa dolor mollitia quam ex aut
