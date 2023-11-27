@@ -14,13 +14,18 @@ if (isset($_SESSION['name'])){
 ?>
     <main>
         <div class="adapt" id="adapt">
-            <h2>Votre prénom</h2>
-            <p><?php echo $_SESSION['name'] ?></p>
+            <h2 class = "title">Votre prénom</h2>  
+                <div class="update">
+                    <p><?php echo $_SESSION['name'] ?></p>
+                    <a class ="update-button" href="./Modif_profil.php">Modifier</a>
+                </div>
+            <h2 class = "title">Votre nom</h2>
+                <div class="update">
+                    <p><?php echo $_SESSION['lastname'] ?></p>
+                    <a class ="update-button" href="./Modif_profil.php">Modifier</a>
+                 </div>
 
-            <h2>Votre nom</h2>
-            <p><?php echo $_SESSION['lastname'] ?></p>
-
-            <h2>Votre date de naissance</h2>
+            <h2 class = "title">Votre date de naissance</h2>
             
             <?php 
             
@@ -29,15 +34,23 @@ if (isset($_SESSION['name'])){
             }
 
             ?>
+                <div class="update">
+                    <p><?php echo dateFr($_SESSION['birthday']); ?></p>
+                    <a class ="update-button" href="./Modif_profil.php">Modifier</a>
+                </div>
 
-            <p><?php echo dateFr($_SESSION['birthday']); ?></p>
 
+            <h2 class = "title" >Votre mail</h2>
+                <div class="update">
+                    <p><?php echo $_SESSION['mail'] ?></p>
+                    <a class ="update-button" href="./Modif_profil.php">Modifier</a>
+                </div>
 
-            <h2>Votre mail</h2>
-            <p><?php echo $_SESSION['mail'] ?></p>
-
-            <h2>Votre mot de passe</h2>
-            <p><?php echo "*************" ?></p>
+            <h2 class = "title" >Votre mot de passe</h2>
+                <div class="update">
+                    <p><?php echo "*************" ?></p>
+                    <a class ="update-button" href="./Modif_profil.php">Modifier</a>
+                </div>
         </div>
 
 <?php
