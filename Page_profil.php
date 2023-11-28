@@ -11,12 +11,13 @@ if (isset($_SESSION['name'])){
   
     include("includes/header.php");
     include('connexion.php');
+    include('post_Modif_profil.php');
 ?>
     <main>
         <div class="adapt" id="adapt">
             <h2 class = "title">Votre prénom</h2>  
                 <div class="update">
-                    <p><?php echo $_SESSION['name'] ?></p>
+                    <p><?php echo $_SESSION['name']; ?></p>
                     <a class ="update-button" href="./Modif_profil.php">Modifier</a>
                 </div>
             <h2 class = "title">Votre nom</h2>
