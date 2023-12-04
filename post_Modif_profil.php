@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'name' => $newname,
         'birthday' => $newbirthday,
         'mail' => $newmail,
-        'password' => $newpassword
+        'password' => $newpassword,
     ]);
     
     // Redirection vers la page de profil ou autre traitement
