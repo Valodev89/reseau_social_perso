@@ -17,6 +17,11 @@ if (isset($_SESSION['name'])){
         
         <form action="post_Modif_profil.php" id="form" method="post">
 
+            <div class = "no-visuality">
+              <label style class = "title" for="id">id</label>
+              <input type="id" name="id" id="id" required>
+            </div>
+
             <label class = "title" for="lastname">Votre prénom</label>
             <input type="lastname" name="lastname" id="lastname" required>
 

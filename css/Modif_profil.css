@@ -246,6 +246,10 @@ input[type="submit"]:hover {
   transition: 1s ease-in;
 }
 
+.no-visuality {
+  display: none;
+}
+
 .imgImproviseo {
   width: 60%;
   padding: 2rem;
