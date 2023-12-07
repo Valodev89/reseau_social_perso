@@ -37,6 +37,7 @@ if(!isset($_POST['mail']) && !isset($_POST['password'])) {
         $_SESSION['birthday'] = $user['birthday'];
         $_SESSION['mail'] = $user['mail'];
         $_SESSION['password'] = $user['password'];
+        $_SESSION['id'] = $user['id'];
 
          header("Location: page_principal_log.php");
 

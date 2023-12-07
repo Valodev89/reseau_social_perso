@@ -18,8 +18,8 @@ if (isset($_SESSION['name'])){
         <form action="post_Modif_profil.php" id="form" method="post">
 
             <div class = "no-visuality">
-              <label style class = "title" for="id">id</label>
-              <input type="id" name="id" id="id" required>
+              <label style class = "title" for="id"><?php $_SESSION['id']; ?></label>
+              <input type="id" name="id" id="id">
             </div>
 
             <label class = "title" for="lastname">Votre prénom</label>
@@ -38,16 +38,12 @@ if (isset($_SESSION['name'])){
             <input type="password" name="password" id="password" required>
 
             <input type="submit" value="Valider" id="valid">
-              <?php 
-                if (isset($_SESSION['error'])) {
-
-                  echo $_SESSION['error'];
-                
-                } else {
-
+            <?php 
+              if (isset($_SESSION['error'])) {
+                echo $_SESSION['error'];
+              } else {
                  echo $_SESSION['error'] = '';
-                 
-                }
+              }
                ?>
         </form>
       </div>
