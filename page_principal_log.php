@@ -87,3 +87,5 @@ include('connexion.php');
 include('includes/footer.php');
 
 ?>
+
+<!-- //crée moi un formulaire de connexion -->
