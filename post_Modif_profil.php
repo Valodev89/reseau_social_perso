@@ -6,8 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $newname = $_POST['name'];
     $newbirthday = $_POST['birthday'];
     $newmail = $_POST['mail'];
-    $newpassword = $_POST['password'];
-    // crypt($_POST['password'],$salt);
+    $newpassword = crypt($_POST['password'],$salt);
     $id = $_POST['id'];
     
     // Requête SQL pour mettre à jour le nom de l'utilisateur dans la base de données
